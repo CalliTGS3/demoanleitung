@@ -1,12 +1,47 @@
 # Beipiel Anleitung für it@school
 
-## Schritt 1
+## Einleitung @unplugged
+
+**So schliesst Du Deinen @boardname@ am Laptop an.**
+
+```template
+let x = 0
+basic.showString("Hello!")
+basic.clearScreen()
+```
+
+
+## Schritt 1 @fullscreen
 
 Nimm den Anzeigeblock und zeichne ein großes Herz.
 
-## Schritt 2
+```blocks
+basic.forever(function() {
+    basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # #
+        . # # # .
+        . . # . .`);
+})
+```
 
-Nimm den Anzeigeblock und zeichne ein kleines Herz.
 
+## Schritt 2 @fullscreen
 
+Lösche anschließend den Bildschirm.
+
+```blocks
+basic.forever(function() {
+    basic.showLeds(`
+        . # . # .
+        # # # # #
+        # # # # #
+        . # # # .
+        . . # . .`);
+basic.clearScreen()
+}
+)
+
+```
 
